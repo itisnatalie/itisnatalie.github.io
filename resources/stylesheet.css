@@ -1,0 +1,185 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    background-image: url("https://www.parkscandles.com/wp/wp-content/uploads/2019/05/iStock-185056845.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    position: fixed;
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    z-index: 2;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+}
+
+.links {
+    border-bottom: 1px solid #F9D6E6;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 30px;
+}
+
+nav li {
+    font-family: Verdana, sans-serif;
+    display: inline;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    border-radius: 5%;
+    transition: color 1s, text-shadow 1s;
+    }
+
+li:hover {
+    color:#c92959;
+    /* text-shadow: 4px 4px 7px #F9D6E6 ; */
+}
+
+li:active {
+    background-color:#F9D6E6;
+    opacity: 0.65;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+
+h1 {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 4em;
+    padding: 20px 200px;
+    color: #ffffff;
+    text-shadow: 3px 5px 5px #521426;
+}
+
+h1:hover {
+    text-shadow: none;
+    opacity: 0.75;
+    color: #c92959;
+    background-color: #F9D6E6;
+    letter-spacing: 10px;
+    border-radius: 3em;
+    padding: 80px;
+    font-family: "Montserrat", sans-serif;
+    transition: all 1s;
+}
+
+.lightpblock {
+    width: 35%;
+    height: 15px;
+    position: relative;
+    margin: 39em 0 0 4em;
+    z-index: 2;
+    background-color: #F9D6E6;
+    border-radius: 1em;
+}
+
+.darkpblock {
+    width: 35%;
+    height: 15px;
+    position: relative;
+    margin: 1em 0 0 70em;
+    z-index: 2;
+    opacity: 0.75;
+    background-color: #c92959;
+    border-radius: 1em;
+}
+
+main {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 0em;
+    background-color: initial ;
+    width: 100%;
+    height: 30rem;
+}
+
+h2 {
+    padding: 20px;
+    margin: 50px 0;
+    font-size: 2.5em;
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    background-color:aliceblue ;
+    width: 100%;
+    height: 30rem;
+}
+
+section#projects {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    background-color:aliceblue ;
+    width: 100%;
+    height: 40rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    width: fit-content;
+}
+
+.space {
+    margin: 3rem;
+}
+
+.individual {
+    box-sizing: content-box;
+    padding: 5rem 2rem;
+    border: 20px solid rgb(85, 107, 148);
+    background-color: #ffffff;
+}
+
+.individual:hover {
+    color: white;
+    background-color: #c92959;
+    border-color:#F9D6E6;
+    transition: all 0.5s;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+}
