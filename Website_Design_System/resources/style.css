@@ -219,21 +219,26 @@ footer {
     align-items: center;
 }
 
+a {
+    color: #c92959;
+}
+
 .email:hover {
     color: black;
 }
 
-.insta {
-    display: flex;
-    align-items: center;
-}
-
-.insta:hover {
+.email:active {
     color: white;
 }
 
-.instaimg {
+#insta {
     padding-left: 7px;
-    height: 30px;
-    width: auto;
+}
+
+#insta:hover {
+    color: white;
+}
+
+#insta:active {
+    color: blue;
 }
