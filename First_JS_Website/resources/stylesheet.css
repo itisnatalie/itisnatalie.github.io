@@ -1,0 +1,7 @@
+body {
+    width: 90vw;
+    height: 100vh;
+    color:azure;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(120deg, rgb(14, 96, 143) 0 35%, rgb(241, 218, 236) 60% 100%);
+}
