@@ -330,9 +330,9 @@ form button {
         max-height: 200px;
     }
 
-    .individual:active; {
+    .individual:active {
         background-color: #c92959;
-        border-color:#F9D6E6;
+        border-color: #F9D6E6;
         transition: all 0.5s;
     }
 
@@ -376,7 +376,7 @@ form button {
     }
 }
 
-@media screen and (max-width: 425px) and (max-height: 842) {
+/* @media screen and (max-width: 425px) and (max-height: 842) { */
     /* header {
         width: 100px;
     }
@@ -459,4 +459,4 @@ form button {
         form input, form button {
             padding: 15px;
         }
-} */
+}
