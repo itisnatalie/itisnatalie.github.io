@@ -1,18 +1,19 @@
 body{
-    background-color: #141c3a;
+    background-color: #F9D6E6;
     font-family: 'Nunito', sans-serif;
     width: 70%;
     margin: auto;
 }
 
 h1{
-    color: white;
+    color: #521426;
+    text-shadow: white 1px 0 19px;;
     text-align: center;
     margin-top: 64px;
 }
 
 #fortune{
-    color: #EFBB24;
+    color: #c92959;
     font-size: 24px;
     text-align: center;
 }
@@ -25,9 +26,9 @@ h1{
 #fortuneButton{
     padding: 10px;
     font-size: 16px;
-    background: white;
+    background:  #521426;
     border: 5px solid #D0104C;
     border-radius: 5px;
-    color: #141c3a;
+    color: white;
     cursor: pointer;
 }
