@@ -4,10 +4,11 @@ html, body {
     font-family: Verdana, sans-serif;
     max-width: 100vw;
     overflow-x: hidden;
+    overflow-y:inherit;
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     top: 0;
     display: flex;
     justify-content: flex-end;
@@ -18,7 +19,7 @@ nav {
     /* position: fixed; */
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    width: 100vw;
     height: 52px;
     padding-right: 30px;
     position: fixed;
@@ -74,10 +75,10 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
-    position: absolute;
-    width: 100%;
-    height: 70%;
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,.2);
+    position: relative;
+    width: 100vw;
+    height: 70vh;
     top: 0;
     display: flex;
     justify-content: center;
@@ -90,21 +91,9 @@ h1 {
     position: relative;
     font-family: "Montserrat", sans-serif;
     font-size: 4em;
-    padding: 20px 200px;
+    padding-right: 20px;
     color: #ffffff;
     text-shadow: 3px 5px 5px #521426;
-}
-
-h1:hover {
-    text-shadow: none;
-    opacity: 0.75;
-    color: #c92959;
-    background-color: #F9D6E6;
-    letter-spacing: 10px;
-    border-radius: 3em;
-    padding: 80px;
-    font-family: "Montserrat", sans-serif;
-    transition: all 1s;
 }
 
 /* .lightpblock {
@@ -141,16 +130,16 @@ section {
     justify-content: center;
     margin-top: 5rem;
     background-color: #f3c8d5;
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 110vh;
 }
 section#about {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 40em;
+    margin-top: 3em;
     background-color: initial ;
-    width: 100%;
+    width: 100vw;
     height: 28rem;
     /* border: 5px solid #a06273; */
 }
@@ -181,7 +170,7 @@ section#projects {
     justify-content: center;
     margin-top: 0rem;
     background-color:aliceblue ;
-    width: 100%;
+    width: 100vw;
     height: 38rem;
 }
 
@@ -255,7 +244,7 @@ form {
     display: flex;
     flex-direction: column;
     padding: 2vw 4vw;
-    width: 90%;
+    width: 90vw;
     max-width: 600px;
     border-radius: 5px;
 }
@@ -295,14 +284,20 @@ form button {
     }
     
     nav {
-    font-size: 11px;  
+        font-size: 11px;
+        padding-right: 0; 
+        justify-content: center; 
     }
 
+    nav ul {
+        padding: 0;
+    }
 
     h1 {
-        font-size: 35px;
-        width: 100%;
-        float: left;
+        font-size: 40px;
+        width: 100vw;
+        text-align: right;
+
     }
 
     h2 {
@@ -382,87 +377,102 @@ form button {
     }
 }
 
-/* @media screen and (max-width: 425px) and (max-height: 842) { */
-    /* header {
-        width: 100px;
+@media screen and (min-width: 321px) and (max-width: 425px) and (max-height: 842) {
+    body {
+        max-width: 100vw;
+        overflow-x: hidden;
     }
+    
     nav {
-        font-size: 11px;  
+        font-size: 11px;
+        padding-right: 0; 
+        justify-content: center; 
     }
-     */
-        /* h1 {
-            font-size: 35px;
-            width: 100%;
-            float: left;
+
+    nav ul {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 35px;
+        width: 100vw;
+        text-align: right;
+    }
+
+    h2 {
+        font-size: 30px;
+        padding: 10px;
+        margin: 0;
+    }
+
+    section#about {
+        height: 50vh;
+    }
+
+    p.about {
+        font-size: 16px;
+    }
+
+    section#projects {
+        margin: 0;
+        padding: 0;
+        height: fit-content;
+    }
+
+    .container {
+        display: block;
+        max-width: 320px;
+    }
+
+    .individual {
+        padding: 0;
+        border: 10px solid #99475e;
+        max-height: 200px;
+    }
+
+    .individual:active {
+        background-color: #c92959;
+        border-color: #F9D6E6;
+        transition: all 0.5s;
+    }
+
+    .individual h3:active {
+        color: white;
+    }
+
+    .individual p:active {
+        color: white;
         }
+
+    h3 {
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    .individual p {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    #contact {
+        height: 95vh;
+    }
+    #contact p {
+        font-size: 16px;
+    }
+
+    form {
+        max-height: 550px;
+    }
+
+    form input, form textarea {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    form button {
+        padding: 15px 0px;
+        font-size: 16px;
+    }
     
-                h2 {
-            font-size: 30px;
-            padding: 10px;
-            margin: 0;
-        }
-    
-        section#about {
-            height: 50vh;
-        }
-    
-        p.about {
-            font-size: 16px;
-        }
-    
-        section#projects {
-            margin: 0;
-            padding: 0;
-            height: fit-content;
-        }
-    
-        .container {
-            display: block;
-            max-width: 320px;
-        }
-    
-        .individual {
-            padding: 0;
-            border: 10px solid #99475e;
-            max-height: 200px;
-        }
-    
-        .individual:active; {
-            background-color: #c92959;
-            border-color:#F9D6E6;
-            transition: all 0.5s;
-        }
-    
-        .individual h3:active {
-            color: white;
-        }
-    
-        .individual p:active {
-            color: white;
-            }
-    
-        h3 {
-            font-size: 18px;
-            padding-left: 10px;
-        }
-    
-        .individual p {
-            font-size: 14px;
-            padding-left: 10px;
-        }
-    
-        #contact {
-            height: 95vh;
-        }
-        #contact p {
-            font-size: 16px;
-        }
-    
-        form {
-            max-height: 550px;
-        }
-    
-        form input, form button {
-            padding: 15px;
-        }
 }
