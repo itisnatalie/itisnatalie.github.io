@@ -4,7 +4,7 @@ html, body {
     font-family: Verdana, sans-serif;
     max-width: 100vw;
     overflow-x: hidden;
-    overflow-y:inherit;
+    /* overflow-y: ; */
 }
 
 header {
@@ -20,8 +20,8 @@ nav {
     display: flex;
     justify-content: flex-end;
     width: 100vw;
-    height: 52px;
-    padding-right: 30px;
+    height: 3.5rem;
+    padding-right: 2rem;
     position: fixed;
     z-index: 5;
     transition: all 200ms;
@@ -41,13 +41,13 @@ nav {
 } */
 
 .border-line {
-    padding-bottom: 35px;
+    padding-bottom: 0.5rem;
 }
 
 nav li {
     font-family: Verdana, sans-serif;
     display: inline;
-    padding: 10px 15px;
+    padding: 1rem;
     font-size: 1em;
     font-weight: bold;
     color: white;
@@ -55,9 +55,9 @@ nav li {
     }
 
 li:hover {
-    color:#f3c8d5;
-    border-bottom: 1px solid #F9D6E6;
-    transition: all 0.5s;
+    color:#F9D6E6;
+    border-bottom: 0.5rem solid #F9D6E6;
+    transition: all 0.2s;
     /* text-shadow: 4px 4px 7px #F9D6E6 ; */
 }
 
@@ -91,9 +91,8 @@ h1 {
     position: relative;
     font-family: "Montserrat", sans-serif;
     font-size: 4em;
-    padding-right: 20px;
     color: #ffffff;
-    text-shadow: 3px 5px 5px #521426;
+    text-shadow: 0.5rem 0.5rem 10px #521426;
 }
 
 /* .lightpblock {
@@ -131,7 +130,7 @@ section {
     margin-top: 5rem;
     background-color: #f3c8d5;
     width: 100vw;
-    height: 110vh;
+    height: 115vh;
 }
 section#about {
     position: relative;
@@ -146,21 +145,21 @@ section#about {
 
 h2 {
     text-align: center;
-    padding-top: 30px;
-    margin: 20px 0 30px 0;
-    font-size: 40px;
+    padding-top: 1rem;
+    margin: 2rem 0 2rem 0;
+    font-size: 2.5em;
 }
 
 #myQuote {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
     font-size: 16px;
 }
 
 .about {
-    padding-top: 20px;
+    padding-top: 2rem;
     font-size: 18px;
-    padding: 50px;
+    padding: 4rem;
     background-color: #F9D6E6;
 }
 
@@ -187,7 +186,7 @@ section#projects {
 
 h3 {
     color: #521426;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 p {
@@ -200,7 +199,7 @@ p {
 .individual {
     box-sizing: content-box;
     padding: 5rem 2rem;
-    border: 20px solid #99475e;
+    border: 1.2rem solid #99475e;
     background-color: white;
 }
 
@@ -220,7 +219,7 @@ p {
 
 #contact p {
     font-size: 17px;
-    padding: 10px;
+    padding: 1rem;
 }
 
 /* strong {
