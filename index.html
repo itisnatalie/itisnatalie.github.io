@@ -9,11 +9,11 @@
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
     <!--Social Meta Tags =basic= -->
     <meta property="og:description" content="Never heard of me? Time for change. Discover my journey as a Front-End Developer!">
-    <meta property="og:title" content="Hello there! I am Natalia | My Front-End Portfolio">
+    <meta property="og:title" content="Natalia Ivanova | My Front-End Portfolio | Welcome & Enjoy!">
     <meta property="twitter:description" content="Never heard of me? Time for change. Discover my journey as a Front-End Developer!">
-    <meta property="twitter:title" content="Hello there! I am Natalia | My Front-End Portfolio">
+    <meta property="twitter:title" content="Natalia Ivanova | My Front-End Portfolio | Welcome & Enjoy!">
     <!-- SERP and Tab Title -->
-    <title>Hello there! I am Natalia | My Front-End Portfolio</title>
+  <title>Natalia Ivanova | My Front-End Portfolio | Welcome & Enjoy!</title>
     <link rel='canonical' href='https://itisnatalie.github.io/' />
     <!-- CSS style & Google Font -->
     <link rel="stylesheet" href="./resources/stylesheet.css" />
@@ -22,6 +22,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap"
       rel="stylesheet" type="text/css"/>
+    <!-- Font Awesome Kit -->
+    <script defer src="https://kit.fontawesome.com/c4fa23a37c.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="nav-scrolled">
@@ -37,14 +39,15 @@
     <main>
       <div id="hero">
         <div class="title">
-          <h1>Hello<br>there!</h1>
+          <h1>Wel<span>come</span><br>&<br>en<span>joy</span>!</h1>
         </div>
       </div>
       <section id="about">
-        <div>
-          <h2>About Me</h2>
-          <p id="myQuote">
-            "Eager learner with a vision, driven by challenges."
+        <div class="divWidth">
+          <h2>.About(<span>Me</span>)</h2>
+          <p id="myQuote" class="flex">
+            "Eager learner with a vision.<br>Passionate about progress.<br>Driven by challenges."
+            <i class="fa-solid fa-seedling" style="color: #AF314F; font-size: 3rem;"></i>
           </p>
           <p class="about">
             And some more basic info?<br /><br />I am Natália and just starting
@@ -54,87 +57,67 @@
         </div>
       </section>
       <section id="projects">
-        <div>
-          <h2>Projects</h2>
-          <p></p>
+        <div class="divWidth">
+          <h2 class="center">
+            <span>Pro</span><span class="blue">je</span>c<span class="blue">ts</span>
+            <span class="space"></span>
+            <i class="fa-solid fa-plane-departure" style="color: #6a37d4;"></i>
+          </h2>
           <div class="container">
-            <div class="space">
-              <a href="./Website_Design_System/index.html" target="_blank">
                 <div class="individual">
-                  <i class="fab fa-css3-alt"></i>
-                  <h3>Colours that are always trendy?</h3>
-                  <p>Find out more!</p>
-                </div></a>
-            </div>
-            <div class="space">
-              <a href="./First_JS_Website/my_website.html" target="_blank">
+                  <a href="./Website_Design_System/index.html" target="_blank">
+                      <h3>Colours that are always trendy?</h3>
+                      <p class="describe">Find out more!</p>
+                   </a>
+                </div>
                 <div class="individual">
-                  <h3>What was my first JS script?</h3>
-                  <p>Let me show you...</p>
-                </div></a>
-            </div>
-            <div class="space">
-              <a href="./JS_DailyFortunes/index.html" target="_blank">
+                  <a href="./First_JS_Website/my_website.html" target="_blank">
+                      <h3>What was my first JS script?</h3>
+                      <p class="describe">Let me show you...</p>
+                  </a>
+                </div>
                 <div class="individual">
-                  <h3>Reveal you daily fortune!</h3>
-                  <p>Click to find out more</p>
-                </div></a>
-            </div>
+                  <a href="./JS_DailyFortunes/index.html" target="_blank">
+                      <h3>Reveal you daily fortune!</h3>
+                      <p class="describe">Click to find out more</p>
+                  </a>
+                </div>
           </div>
         </div>
       </section>
     </main>
     <footer>
       <section id="contact">
-        <div>
-          <h2>Contact</h2>
-          <p>
-            Want all the options? Well, let me keep it a bit formal for the
-            first time...
-          </p>
-          <p>Here is my email:<strong> natalia.ivanova733@gmail.com</strong></p>
-          <form method="post" onsubmit="sendEmail(); reset(); return false">
-            <h3>Get in Touch</h3>
-            <p>
-              Please, use the email adress above, this form is not yet
-              functioning...
-            </p>
-            <input type="text" id="name" placeholder="Your Name" autocomplete="off" required />
-            <input type="email" id="email" placeholder="Email" autocomplete="off" required />
-            <input type="text" id="phone" placeholder="Phone no." autocomplete="off" required />
-            <textarea id="message" rows="4" placeholder="What do you have in mind? "></textarea>
-            <button type="submit">Send</button>
-          </form>
+          <div class="flex">
+              <div class="marginTop">
+                  <h2>Cont<span>act</span>
+                  <i class="fa-regular fa-paper-plane"></i>
+                  </h2>
+                  <p>
+                    If I sparked your interest, do not hesitate...<br> I am ready to read your message!<br><br>
+                    Want all the options?<br>Well, you can choose which channel you like:
+                  </p>
+              <div class="marginTop">
+                  <a href="https://www.linkedin.com/m/in/nat%C3%A1lia-ivanov%C3%A1" alt="LinkedIn link to Natalia Ivanova's profile" target="_blank"><i class="fa-brands fa-linkedin socials"></i></a>
+                  <a href="https://github.com/itisnatalie" alt="Github link to Natalia Ivanova's profile" target="_blank"><i class="fa-brands fa-github socials"></i></a>
+              </div>  
+          </div>
+            <div id="form">
+                <form action="https://formsubmit.co/5e78d0bdbccd43a78ef13cd25ab8a144" method="POST">
+                  <h3>Get in Touch</h3>
+                  <input type="text" name="name" placeholder="Full Name" autocomplete="off" required />
+                  <input type="email" name="email" placeholder="Email" autocomplete="off" required />
+                  <input type="text" name="phone" placeholder="Phone No." autocomplete="off" required/>
+                  <textarea name="message" rows="5" placeholder="What do you have in mind? "></textarea>
+                  <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
       </section>
     </footer>
   </body>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    function sendEmail() {
-      Email.send({
-        Host: "smtp.elasticemail.com",
-        Username: "natalia.ivanova733@gmail.com",
-        Password: "password",
-        To: "natalia.ivanova733@gmail.com",
-        From: document.getElementById("email").value,
-        Subject: "New Contact Form Enquiry",
-        Body:
-          "Name: " +
-          document.getElementById("name").value +
-          "<br> Email: " +
-          document.getElementById("email").value +
-          "<br> Phone no: " +
-          document.getElementById("phone").value +
-          "<br> Message: " +
-          document.getElementById("message").value,
-      }).then((message) => alert("Success! Your message was sent."));
-    }
-  </script>
   <script
-    defer
-    type="text/javascript"
-    src="./resources/navChangeScroll.js"
+    defer type="text/javascript" src="./resources/navChangeScroll.js"
   ></script>
   <!-- <script defer type="text/javascript" src="index.js"></script>
     <script defer type="text/javascript" src="bubbles.js"></script> -->
