@@ -102,7 +102,7 @@ section {
     position: relative;
     display: flex;
     justify-content: center;
-    border: 1px solid #6A37D4;
+    /* border: 1px solid #6A37D4; */
     width: 100vw;
     /* height: 50rem; */
 }
